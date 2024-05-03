@@ -1,0 +1,33 @@
+{
+  "item.mccourse.orichalcum_ingot": "Orichalcum Ingot",
+  "item.mccourse.orichalcum_ore": "Orichalcum Ore",
+  "item.mccourse.orichalcum_steel": "Orichalcum Steel",
+  "item.mccourse.apatite_gem": "Apatite Gem",
+  "item.mccourse.apatite_ingot": "Apatite Ingot",
+  "item.mccourse.apatite_steel": "Apatite Steel",
+  "item.mccourse.metal_detector": "Metal Detector",
+  "item.mccourse.cauliflower": "Cauliflower",
+  "item.mccourse.peat_brick": "Peat Brick",
+
+  "block.mccourse.orichalcum_block": "Orichalcum Block",
+  "block.mccourse.apatite_steel_block": "Apatite Steel Block",
+  "block.mccourse.apatite_ore_block": "Apatite Ore Block",
+  "block.mccourse.orichalcum_ore_block": "Orichalcum Ore Block",
+
+  "block.mccourse.blue_spore_blossom": "Blue Spore Blossom",
+  "block.mccourse.orange_spore_blossom": "Orange Spore Blossom",
+  "block.mccourse.yellow_spore_blossom": "Yellow Spore Blossom",
+  "block.mccourse.red_spore_blossom": "Red Spore Blossom",
+
+  "block.mccourse.sound_block": "Sound Block",
+  "block.mccourse.rock": "Rock",
+
+  "item.mccourse.metal_detector.no_valuables": "No Valuables Found!",
+
+  "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
+  "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
+  "tooltip.mccourse.sound_block": "Plays a nice Sound when Walking on or being Right-Clicked",
+
+
+  "itemgroup_orichalcum_group": "Garden's of Arcadia"
+}

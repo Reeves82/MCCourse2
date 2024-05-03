@@ -1,5 +1,9 @@
 package net.boxjumper.mccourse;
 
+import net.boxjumper.mccourse.Item.ModItemGroup;
+import net.boxjumper.mccourse.Item.ModItems;
+import net.boxjumper.mccourse.block.ModBlocks;
+import net.boxjumper.mccourse.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +15,13 @@ public class MCCourseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroup.registerItemGroups();
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
+		ModRegistries.registerModStuffs();
+
 	}
 }
+
