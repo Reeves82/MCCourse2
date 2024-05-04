@@ -4,8 +4,12 @@ import net.boxjumper.mccourse.block.ModBlocks;
 import net.boxjumper.mccourse.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -68,9 +72,53 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_SPORE_BLOSSOM,
                         ModBlocks.RED_SPORE_BLOSSOM);
 
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.TERRACOTTA_SLAB,
+                        ModBlocks.WHITE_TERRACOTTA_SLAB,
+                        ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB,
+                        ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB,
+                        ModBlocks.LIME_TERRACOTTA_SLAB,
+                        ModBlocks.GRAY_TERRACOTTA_SLAB,
+                        ModBlocks.GREEN_TERRACOTTA_SLAB,
+                        ModBlocks.BLACK_TERRACOTTA_SLAB,
+                        ModBlocks.BLUE_TERRACOTTA_SLAB,
+                        ModBlocks.BROWN_TERRACOTTA_SLAB,
+                        ModBlocks.RED_TERRACOTTA_SLAB,
+                        ModBlocks.YELLOW_TERRACOTTA_SLAB,
+                        ModBlocks.ORANGE_TERRACOTTA_SLAB,
+                        ModBlocks.CYAN_TERRACOTTA_SLAB,
+                        ModBlocks.PURPLE_TERRACOTTA_SLAB,
+                        ModBlocks.PINK_TERRACOTTA_SLAB,
+                        ModBlocks.MAGENTA_TERRACOTTA_SLAB,
+
+                        ModBlocks.TERRACOTTA_STAIRS,
+                        ModBlocks.WHITE_TERRACOTTA_STAIRS,
+                        ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS,
+                        ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS,
+                        ModBlocks.LIME_TERRACOTTA_STAIRS,
+                        ModBlocks.GRAY_TERRACOTTA_STAIRS,
+                        ModBlocks.GREEN_TERRACOTTA_STAIRS,
+                        ModBlocks.BLACK_TERRACOTTA_STAIRS,
+                        ModBlocks.BLUE_TERRACOTTA_STAIRS,
+                        ModBlocks.BROWN_TERRACOTTA_STAIRS,
+                        ModBlocks.RED_TERRACOTTA_STAIRS,
+                        ModBlocks.YELLOW_TERRACOTTA_STAIRS,
+                        ModBlocks.ORANGE_TERRACOTTA_STAIRS,
+                        ModBlocks.CYAN_TERRACOTTA_STAIRS,
+                        ModBlocks.PURPLE_TERRACOTTA_STAIRS,
+                        ModBlocks.PINK_TERRACOTTA_STAIRS,
+                        ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
+
+
+
+
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
+
+//-----------------------Tag for custom Tool Material Orichcalcum ------------------------------------------------------
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))
+                .add(ModBlocks.ORICHALCUM_ORE_BLOCK);
 
     }
 }

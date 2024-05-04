@@ -1,13 +1,13 @@
 package net.boxjumper.mccourse.Item;
 
 import net.boxjumper.mccourse.Item.custom.MetalDetectorItem;
+import net.boxjumper.mccourse.Item.custom.ModPoisonSwordItem;
 import net.boxjumper.mccourse.MCCourseMod;
 import net.boxjumper.mccourse.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -26,6 +26,37 @@ public class ModItems {
     public static final Item APATITE_STEEL = registerItem("apatite_steel",
             new Item(new FabricItemSettings()));
 
+    //------------------------------------------------------------------------------------------------------------
+    //                                     TOOLS
+    // ------------------------------------------------------------------------------------------------------------
+
+    public static final Item ORICHALCUM_SWORD = registerItem("orichalcum_sword",
+            new ModPoisonSwordItem(ModToolMaterial.ORICHALCUM, 5,2, new FabricItemSettings()));
+    public static final Item ORICHALCUM_AXE = registerItem("orichalcum_axe",
+            new AxeItem(ModToolMaterial.ORICHALCUM, 5,6, new FabricItemSettings()));
+    public static final Item ORICHALCUM_PICKAXE = registerItem("orichalcum_pickaxe",
+            new PickaxeItem(ModToolMaterial.ORICHALCUM, 5,6, new FabricItemSettings()));
+    public static final Item ORICHALCUM_SHOVEL = registerItem("orichalcum_shovel",
+            new ShovelItem(ModToolMaterial.ORICHALCUM, 5,3, new FabricItemSettings()));
+    public static final Item ORICHALCUM_HOE = registerItem("orichalcum_hoe",
+            new HoeItem(ModToolMaterial.ORICHALCUM, 5,3, new FabricItemSettings()));
+
+    //------------------------------------------------------------------------------------------------------------
+    //                                     ARMOR
+    // ------------------------------------------------------------------------------------------------------------
+
+    public static final Item ORICHALCUM_HELMET = registerItem("orichalcum_helmet",
+            new ArmorItem(ModArmorMaterials.ORICHALCUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ORICHALCUM_CHESTPLATE = registerItem("orichalcum_chestplate",
+            new ArmorItem(ModArmorMaterials.ORICHALCUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ORICHALCUM_LEGGINGS = registerItem("orichalcum_leggings",
+            new ArmorItem(ModArmorMaterials.ORICHALCUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ORICHALCUM_BOOTS = registerItem("orichalcum_boots",
+            new ArmorItem(ModArmorMaterials.ORICHALCUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
 
     public static final Item CAULIFLOWER = registerItem("cauliflower",
             new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER)));

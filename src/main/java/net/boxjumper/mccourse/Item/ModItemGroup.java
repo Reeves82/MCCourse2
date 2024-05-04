@@ -19,6 +19,17 @@ public class ModItemGroup {
                         entries.add(ModItems.ORICHALCUM_INGOT);
                         entries.add(ModItems.ORICHALCUM_ORE);
 
+                        entries.add(ModItems.ORICHALCUM_AXE);
+                        entries.add(ModItems.ORICHALCUM_SWORD);
+                        entries.add(ModItems.ORICHALCUM_HOE);
+                        entries.add(ModItems.ORICHALCUM_SHOVEL);
+                        entries.add(ModItems.ORICHALCUM_PICKAXE);
+
+                        entries.add(ModItems.ORICHALCUM_HELMET);
+                        entries.add(ModItems.ORICHALCUM_CHESTPLATE);
+                        entries.add(ModItems.ORICHALCUM_LEGGINGS);
+                        entries.add(ModItems.ORICHALCUM_BOOTS);
+
                         entries.add(ModBlocks.ORICHALCUM_BLOCK);
                         entries.add(ModBlocks.ORICHALCUM_ORE_BLOCK);
 
@@ -44,6 +55,42 @@ public class ModItemGroup {
 
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.PEAT_BRICK);
+
+                        entries.add(ModBlocks.TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.WHITE_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.GRAY_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.BLACK_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.BROWN_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.RED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.ORANGE_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.YELLOW_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.LIME_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.GREEN_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.CYAN_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.BLUE_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.PURPLE_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.MAGENTA_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.PINK_TERRACOTTA_SLAB);
+
+                        entries.add(ModBlocks.TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.WHITE_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.GRAY_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.BLACK_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.BROWN_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.RED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.ORANGE_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.YELLOW_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.LIME_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.GREEN_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.CYAN_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.BLUE_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.PINK_TERRACOTTA_STAIRS);
 
 
 
