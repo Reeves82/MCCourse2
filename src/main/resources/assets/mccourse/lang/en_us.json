@@ -6,8 +6,8 @@
   "item.mccourse.apatite_ingot": "Apatite Ingot",
   "item.mccourse.apatite_steel": "Apatite Steel",
   "item.mccourse.metal_detector": "Metal Detector",
-  "item.mccourse.cauliflower": "Cauliflower",
   "item.mccourse.peat_brick": "Peat Brick",
+  "item.mccourse.porcupine_spawn_egg": "Porcupine Spawn Egg",
 
   "block.mccourse.orichalcum_block": "Orichalcum Block",
   "block.mccourse.apatite_steel_block": "Apatite Steel Block",
@@ -18,9 +18,21 @@
   "block.mccourse.orange_spore_blossom": "Orange Spore Blossom",
   "block.mccourse.yellow_spore_blossom": "Yellow Spore Blossom",
   "block.mccourse.red_spore_blossom": "Red Spore Blossom",
+  "block.mccourse.glowing_azalea_leaves": "Glowing Azalea Leaves",
+  "block.mccourse.red_azalea_leaves": "Red Azalea Leaves",
+  "block.mccourse.yellow_azalea_leaves": "Yellow Azalea Leaves",
+  "block.mccourse.purple_azalea_leaves": "Purple Azalea Leaves",
 
   "block.mccourse.sound_block": "Sound Block",
   "block.mccourse.rock": "Rock",
+  "block.mccourse.soft_rock": "Soft Rock",
+  "block.mccourse.dark_andesite": "Dark Andesite",
+  "block.mccourse.tuffaceous": "Tuffaceous",
+  "block.mccourse.muddy_roots": "Muddy Roots",
+  "block.mccourse.kaolin_clay": "Kaolin Clay",
+  "block.mccourse.slim_mud": "Slim Mud",
+  "block.mccourse.smelly_mud": "Smelly Mud",
+  "block.mccourse.muddy_clay": "Muddy Clay",
 
   "block.mccourse.terracotta_slab": "Terracotta Slab",
   "block.mccourse.white_terracotta_slab": "White Terracotta Slab",
@@ -57,6 +69,31 @@
   "block.mccourse.purple_terracotta_stairs": "Purple Terracotta Stairs",
   "block.mccourse.magenta_terracotta_stairs": "Magenta Terracotta Stairs",
   "block.mccourse.pink_terracotta_stairs": "Pink Terracotta Stairs",
+
+  "block.mccourse.blue_prismarine": "Blue Prismarine",
+  "block.mccourse.blue_prismarine_slab": "Blue Prismarine Slab",
+  "block.mccourse.blue_prismarine_stairs": "Blue Prismarine Stairs",
+  "block.mccourse.red_prismarine": "Blue Prismarine",
+  "block.mccourse.red_prismarine_slab": "Blue Prismarine Slab",
+  "block.mccourse.red_prismarine_stairs": "Blue Prismarine Stairs",
+  "block.mccourse.yellow_prismarine": "Yellow Prismarine",
+  "block.mccourse.yellow_prismarine_slab": "Yellow Prismarine Slab",
+  "block.mccourse.yellow_prismarine_stairs": "Yellow Prismarine Stairs",
+  "block.mccourse.purple_prismarine": "Purple Prismarine",
+  "block.mccourse.purple_prismarine_slab": "Purple Prismarine Slab",
+  "block.mccourse.purple_prismarine_stairs": "Purple Prismarine Stairs",
+
+  "block.mccourse.purple_lounge_chair": "Purple Lounge Chair",
+  "block.mccourse.red_lounge_chair": "Red Lounge Chair",
+  "block.mccourse.blue_lounge_chair": "Blue Lounge Chair",
+  "block.mccourse.black_lounge_chair": "Black Lounge Chair",
+  "block.mccourse.white_lounge_chair": "White Lounge Chair",
+  "block.mccourse.cyan_lounge_chair": "Cyan Lounge Chair",
+
+  "item.mccourse.cauliflower_seeds": "Cauliflower Seeds",
+  "item.mccourse.cauliflower": "Cauliflower",
+
+  "entity.mccourse.porcupine": "Porcupien",
 
 
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "mccourse:block/red_prismarine",
+    "side": "mccourse:block/red_prismarine",
+    "top": "mccourse:block/red_prismarine"
+  }
+}

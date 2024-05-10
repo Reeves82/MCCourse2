@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mccourse:block/purple_prismarine",
+    "side": "mccourse:block/purple_prismarine",
+    "top": "mccourse:block/purple_prismarine"
+  }
+}

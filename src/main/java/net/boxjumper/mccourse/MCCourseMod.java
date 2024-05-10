@@ -3,6 +3,7 @@ package net.boxjumper.mccourse;
 import net.boxjumper.mccourse.Item.ModItemGroup;
 import net.boxjumper.mccourse.Item.ModItems;
 import net.boxjumper.mccourse.block.ModBlocks;
+import net.boxjumper.mccourse.entity.ModEntities;
 import net.boxjumper.mccourse.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,6 +22,8 @@ public class MCCourseMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModRegistries.registerModStuffs();
+
+		ModEntities.registerModEntites();
 
 	}
 }

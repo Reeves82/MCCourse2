@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mccourse:block/soft_rock",
+    "side": "mccourse:block/soft_rock",
+    "top": "mccourse:block/soft_rock"
+  }
+}

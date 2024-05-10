@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mccourse:block/soft_rock_slab"
+    },
+    "type=double": {
+      "model": "mccourse:block/soft_rock"
+    },
+    "type=top": {
+      "model": "mccourse:block/soft_rock_slab_top"
+    }
+  }
+}

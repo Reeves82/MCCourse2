@@ -4,7 +4,6 @@ import net.boxjumper.mccourse.block.ModBlocks;
 import net.boxjumper.mccourse.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -51,6 +50,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ROCK,
+                        ModBlocks.SOFT_ROCK,
+                        ModBlocks.DARK_ANDESITE,
+                        ModBlocks.MUDDY_ROOTS,
+                        ModBlocks.KAOLIN_CLAY,
+                        ModBlocks.SLIM_MUD,
+                        ModBlocks.SMELLY_MUD,
+                        ModBlocks.MUDDY_CLAY,
+                        ModBlocks.TUFFACEOUS,
+                        ModBlocks.SOFT_ROCK_STAIRS,
+                        ModBlocks.ROCK_STAIRS,
+                        ModBlocks.SOFT_ROCK_SLAB,
+                        ModBlocks.ROCK_SLAB,
                         ModBlocks.ROCK);
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -91,6 +102,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.PINK_TERRACOTTA_SLAB,
                         ModBlocks.MAGENTA_TERRACOTTA_SLAB,
 
+
                         ModBlocks.TERRACOTTA_STAIRS,
                         ModBlocks.WHITE_TERRACOTTA_STAIRS,
                         ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS,
@@ -107,7 +119,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.CYAN_TERRACOTTA_STAIRS,
                         ModBlocks.PURPLE_TERRACOTTA_STAIRS,
                         ModBlocks.PINK_TERRACOTTA_STAIRS,
-                        ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
+                        ModBlocks.MAGENTA_TERRACOTTA_STAIRS,
+
+                        ModBlocks.BLUE_PRISMARINE_SLAB,
+                        ModBlocks.RED_PRISMARINE_SLAB,
+                        ModBlocks.YELLOW_PRISMARINE_SLAB,
+                        ModBlocks.PURPLE_PRISMARINE_SLAB,
+
+                        ModBlocks.BLUE_PRISMARINE_STAIRS,
+                        ModBlocks.RED_PRISMARINE_STAIRS,
+                        ModBlocks.YELLOW_PRISMARINE_STAIRS,
+                        ModBlocks.PURPLE_PRISMARINE_STAIRS,
+
+                        ModBlocks.BLUE_PRISMARINE,
+                        ModBlocks.RED_PRISMARINE,
+                        ModBlocks.YELLOW_PRISMARINE,
+                        ModBlocks.PURPLE_PRISMARINE);
+
+
 
 
 
@@ -119,6 +148,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 //-----------------------Tag for custom Tool Material Orichcalcum ------------------------------------------------------
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))
                 .add(ModBlocks.ORICHALCUM_ORE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.CYAN_LOUNGE_CHAIR)
+                .add(ModBlocks.BLUE_LOUNGE_CHAIR)
+                .add(ModBlocks.BLACK_LOUNGE_CHAIR)
+                .add(ModBlocks.RED_LOUNGE_CHAIR)
+                .add(ModBlocks.PURPLE_LOUNGE_CHAIR)
+                .add(ModBlocks.WHITE_LOUNGE_CHAIR)
+
+                .add(ModBlocks.GLOWING_AZALEA_LEAVES)
+                .add(ModBlocks.RED_AZALEA_LEAVES)
+                .add(ModBlocks.YELLOW_AZALEA_LEAVES)
+                .add(ModBlocks.PURPLE_AZALEA_LEAVES)
+                .add(ModBlocks.CYAN_LOUNGE_CHAIR);
+
+
 
     }
 }

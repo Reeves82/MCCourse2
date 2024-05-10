@@ -2,8 +2,11 @@ package net.boxjumper.mccourse.datagen;
 
 import net.boxjumper.mccourse.Item.ModItems;
 import net.boxjumper.mccourse.block.ModBlocks;
+import net.boxjumper.mccourse.block.custom.CauliflowerCropBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.predicate.StatePredicate;
 
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
@@ -19,6 +22,9 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.YELLOW_SPORE_BLOSSOM);
         addDrop(ModBlocks.RED_SPORE_BLOSSOM);
         addDrop(ModBlocks.ROCK);
+        addDrop(ModBlocks.SOFT_ROCK);
+        addDrop(ModBlocks.DARK_ANDESITE);
+        addDrop(ModBlocks.TUFFACEOUS);
 
         addDrop(ModBlocks.TERRACOTTA_SLAB, slabDrops(ModBlocks.TERRACOTTA_SLAB));
         addDrop(ModBlocks.WHITE_TERRACOTTA_SLAB, slabDrops(ModBlocks.WHITE_TERRACOTTA_SLAB));
@@ -56,6 +62,38 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
         addDrop(ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
         addDrop(ModBlocks.PINK_TERRACOTTA_STAIRS);
+
+        addDrop(ModBlocks.GLOWING_AZALEA_LEAVES);
+        addDrop(ModBlocks.RED_AZALEA_LEAVES);
+        addDrop(ModBlocks.PURPLE_AZALEA_LEAVES);
+        addDrop(ModBlocks.YELLOW_AZALEA_LEAVES);
+
+
+        addDrop(ModBlocks.CYAN_LOUNGE_CHAIR);
+        addDrop(ModBlocks.RED_LOUNGE_CHAIR);
+        addDrop(ModBlocks.BLUE_LOUNGE_CHAIR);
+        addDrop(ModBlocks.PURPLE_LOUNGE_CHAIR);
+        addDrop(ModBlocks.BLACK_LOUNGE_CHAIR);
+        addDrop(ModBlocks.WHITE_LOUNGE_CHAIR);
+
+
+        addDrop(ModBlocks.BLUE_PRISMARINE_SLAB, slabDrops(ModBlocks.BLUE_PRISMARINE_SLAB));
+        addDrop(ModBlocks.RED_PRISMARINE_SLAB, slabDrops(ModBlocks.RED_PRISMARINE_SLAB));
+        addDrop(ModBlocks.YELLOW_PRISMARINE_SLAB, slabDrops(ModBlocks.YELLOW_PRISMARINE_SLAB));
+        addDrop(ModBlocks.PURPLE_PRISMARINE_SLAB, slabDrops(ModBlocks.PURPLE_PRISMARINE_SLAB));
+        addDrop(ModBlocks.BLUE_PRISMARINE_STAIRS);
+        addDrop(ModBlocks.RED_PRISMARINE_STAIRS);
+        addDrop(ModBlocks.YELLOW_PRISMARINE_STAIRS);
+        addDrop(ModBlocks.PURPLE_PRISMARINE_STAIRS);
+        addDrop(ModBlocks.BLUE_PRISMARINE);
+        addDrop(ModBlocks.RED_PRISMARINE);
+        addDrop(ModBlocks.YELLOW_PRISMARINE);
+        addDrop(ModBlocks.PURPLE_PRISMARINE);
+
+        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.CAULIFLOWER_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CauliflowerCropBlock.AGE, 6));
+        this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
+
 
 
 

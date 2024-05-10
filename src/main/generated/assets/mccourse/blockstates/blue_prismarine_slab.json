@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mccourse:block/blue_prismarine_slab"
+    },
+    "type=double": {
+      "model": "mccourse:block/blue_prismarine"
+    },
+    "type=top": {
+      "model": "mccourse:block/blue_prismarine_slab_top"
+    }
+  }
+}

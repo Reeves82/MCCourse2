@@ -49,12 +49,33 @@ public class ModItemGroup {
                         entries.add(ModBlocks.RED_SPORE_BLOSSOM);
 
                         entries.add(ModBlocks.ROCK);
+                        entries.add(ModBlocks.ROCK_SLAB);
+                        entries.add(ModBlocks.ROCK_STAIRS);
+                        entries.add(ModBlocks.SOFT_ROCK);
+                        entries.add(ModBlocks.SOFT_ROCK_SLAB);
+                        entries.add(ModBlocks.SOFT_ROCK_STAIRS);
+                        entries.add(ModBlocks.DARK_ANDESITE);
+                        entries.add(ModBlocks.TUFFACEOUS);
+                        entries.add(ModBlocks.MUDDY_ROOTS);
+                        entries.add(ModBlocks.KAOLIN_CLAY);
+                        entries.add(ModBlocks.SLIM_MUD);
+                        entries.add(ModBlocks.SMELLY_MUD);
+                        entries.add(ModBlocks.MUDDY_CLAY);
+
+                        entries.add(ModBlocks.CYAN_LOUNGE_CHAIR);
+                        entries.add(ModBlocks.RED_LOUNGE_CHAIR);
+                        entries.add(ModBlocks.BLACK_LOUNGE_CHAIR);
+                        entries.add(ModBlocks.BLUE_LOUNGE_CHAIR);
+                        entries.add(ModBlocks.PURPLE_LOUNGE_CHAIR);
+                        entries.add(ModBlocks.WHITE_LOUNGE_CHAIR);
 
 
                         entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.PEAT_BRICK);
+                        entries.add(ModItems.PORCUPINE_SPAWN_EGG);
 
                         entries.add(ModBlocks.TERRACOTTA_SLAB);
                         entries.add(ModBlocks.WHITE_TERRACOTTA_SLAB);
@@ -91,6 +112,25 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
                         entries.add(ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
                         entries.add(ModBlocks.PINK_TERRACOTTA_STAIRS);
+
+                        entries.add(ModBlocks.GLOWING_AZALEA_LEAVES);
+                        entries.add(ModBlocks.RED_AZALEA_LEAVES);
+                        entries.add(ModBlocks.YELLOW_AZALEA_LEAVES);
+                        entries.add(ModBlocks.PURPLE_AZALEA_LEAVES);
+
+                        entries.add(ModBlocks.BLUE_PRISMARINE);
+                        entries.add(ModBlocks.BLUE_PRISMARINE_STAIRS);
+                        entries.add(ModBlocks.BLUE_PRISMARINE_SLAB);
+                        entries.add(ModBlocks.RED_PRISMARINE);
+                        entries.add(ModBlocks.RED_PRISMARINE_STAIRS);
+                        entries.add(ModBlocks.RED_PRISMARINE_SLAB);
+                        entries.add(ModBlocks.YELLOW_PRISMARINE);
+                        entries.add(ModBlocks.YELLOW_PRISMARINE_STAIRS);
+                        entries.add(ModBlocks.YELLOW_PRISMARINE_SLAB);
+                        entries.add(ModBlocks.PURPLE_PRISMARINE);
+                        entries.add(ModBlocks.PURPLE_PRISMARINE_STAIRS);
+                        entries.add(ModBlocks.PURPLE_PRISMARINE_SLAB);
+
 
 
 

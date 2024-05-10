@@ -2,12 +2,18 @@ package net.boxjumper.mccourse.datagen;
 
 import net.boxjumper.mccourse.Item.ModItems;
 import net.boxjumper.mccourse.block.ModBlocks;
+import net.boxjumper.mccourse.block.custom.CauliflowerCropBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -26,7 +32,29 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_SPORE_BLOSSOM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_SPORE_BLOSSOM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_SPORE_BLOSSOM);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROCK);
+
+
+
+
+
+
+        BlockStateModelGenerator.BlockTexturePool rockTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ROCK);
+        rockTexturePool.stairs(ModBlocks.ROCK_STAIRS);
+        rockTexturePool.slab(ModBlocks.ROCK_SLAB);
+
+        BlockStateModelGenerator.BlockTexturePool softRockTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOFT_ROCK);
+        softRockTexturePool.stairs(ModBlocks.SOFT_ROCK_STAIRS);
+        softRockTexturePool.slab(ModBlocks.SOFT_ROCK_SLAB);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARK_ANDESITE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TUFFACEOUS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MUDDY_ROOTS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KAOLIN_CLAY);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SLIM_MUD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMELLY_MUD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MUDDY_CLAY);
+
+
 
         BlockStateModelGenerator.BlockTexturePool terracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.TERRACOTTA);
         terracottaTexturePool.stairs(ModBlocks.TERRACOTTA_STAIRS);
@@ -36,9 +64,9 @@ public class ModModelProvider extends FabricModelProvider {
         whiteTerracottaTexturePool.stairs(ModBlocks.WHITE_TERRACOTTA_STAIRS);
         whiteTerracottaTexturePool.slab(ModBlocks.WHITE_TERRACOTTA_SLAB);
 
-        BlockStateModelGenerator.BlockTexturePool lightgrayTerracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_TERRACOTTA);
-        lightgrayTerracottaTexturePool.stairs(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
-        lightgrayTerracottaTexturePool.slab(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+        BlockStateModelGenerator.BlockTexturePool lightGrayTerracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_TERRACOTTA);
+        lightGrayTerracottaTexturePool.stairs(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+        lightGrayTerracottaTexturePool.slab(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
 
         BlockStateModelGenerator.BlockTexturePool grayTerracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GRAY_TERRACOTTA);
         grayTerracottaTexturePool.stairs(ModBlocks.GRAY_TERRACOTTA_STAIRS);
@@ -80,9 +108,9 @@ public class ModModelProvider extends FabricModelProvider {
         cyanTerracottaTexturePool.stairs(ModBlocks.CYAN_TERRACOTTA_STAIRS);
         cyanTerracottaTexturePool.slab(ModBlocks.CYAN_TERRACOTTA_SLAB);
 
-        BlockStateModelGenerator.BlockTexturePool lightblueTerracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_BLUE_TERRACOTTA);
-        lightblueTerracottaTexturePool.stairs(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
-        lightblueTerracottaTexturePool.slab(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+        BlockStateModelGenerator.BlockTexturePool lightBlueTerracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_BLUE_TERRACOTTA);
+        lightBlueTerracottaTexturePool.stairs(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+        lightBlueTerracottaTexturePool.slab(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
 
         BlockStateModelGenerator.BlockTexturePool purpleTerracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPLE_TERRACOTTA);
         purpleTerracottaTexturePool.stairs(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
@@ -95,6 +123,41 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool pinkTerracottaTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PINK_TERRACOTTA);
         pinkTerracottaTexturePool.stairs(ModBlocks.PINK_TERRACOTTA_STAIRS);
         pinkTerracottaTexturePool.slab(ModBlocks.PINK_TERRACOTTA_SLAB);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLOWING_AZALEA_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_AZALEA_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_AZALEA_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_AZALEA_LEAVES);
+
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CYAN_LOUNGE_CHAIR);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.RED_LOUNGE_CHAIR);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.BLUE_LOUNGE_CHAIR);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.BLACK_LOUNGE_CHAIR);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PURPLE_LOUNGE_CHAIR);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.WHITE_LOUNGE_CHAIR);
+
+
+
+        BlockStateModelGenerator.BlockTexturePool bluePrismarinTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUE_PRISMARINE);
+        bluePrismarinTexturePool.stairs(ModBlocks.BLUE_PRISMARINE_STAIRS);
+        bluePrismarinTexturePool.slab(ModBlocks.BLUE_PRISMARINE_SLAB);
+
+        BlockStateModelGenerator.BlockTexturePool redPrismarinTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RED_PRISMARINE);
+        redPrismarinTexturePool.stairs(ModBlocks.RED_PRISMARINE_STAIRS);
+        redPrismarinTexturePool.slab(ModBlocks.RED_PRISMARINE_SLAB);
+
+        BlockStateModelGenerator.BlockTexturePool yellowPrismarinTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.YELLOW_PRISMARINE);
+        yellowPrismarinTexturePool.stairs(ModBlocks.YELLOW_PRISMARINE_STAIRS);
+        yellowPrismarinTexturePool.slab(ModBlocks.YELLOW_PRISMARINE_SLAB);
+
+        BlockStateModelGenerator.BlockTexturePool purplePrismarinTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PURPLE_PRISMARINE);
+        purplePrismarinTexturePool.stairs(ModBlocks.PURPLE_PRISMARINE_STAIRS);
+        purplePrismarinTexturePool.slab(ModBlocks.PURPLE_PRISMARINE_SLAB);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+
+
 
     }
 
@@ -116,10 +179,18 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ORICHALCUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ORICHALCUM_PICKAXE, Models.HANDHELD);
 
-        itemModelGenerator.register(ModItems.ORICHALCUM_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORICHALCUM_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORICHALCUM_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORICHALCUM_BOOTS, Models.GENERATED);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_BOOTS));
+
+        itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+
+
+
+
 
     }
 }
