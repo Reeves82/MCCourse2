@@ -69,6 +69,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 //----------------------------------------------------------------------------------------------------------------------
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLUE_SPORE_BLOSSOM,
+                        ModBlocks.RED_AZALEA,
+                        ModBlocks.PURPLE_AZALEA,
+                        ModBlocks.YELLOW_AZALEA,
                         ModBlocks.BLUE_SPORE_BLOSSOM);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
@@ -101,6 +104,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.PURPLE_TERRACOTTA_SLAB,
                         ModBlocks.PINK_TERRACOTTA_SLAB,
                         ModBlocks.MAGENTA_TERRACOTTA_SLAB,
+
+
 
 
                         ModBlocks.TERRACOTTA_STAIRS,

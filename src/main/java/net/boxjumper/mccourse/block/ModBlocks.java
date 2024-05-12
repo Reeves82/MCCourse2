@@ -1,12 +1,12 @@
 package net.boxjumper.mccourse.block;
 
 import net.boxjumper.mccourse.MCCourseMod;
-import net.boxjumper.mccourse.block.custom.CauliflowerCropBlock;
-import net.boxjumper.mccourse.block.custom.Lounge;
-import net.boxjumper.mccourse.block.custom.SoundBlock;
+import net.boxjumper.mccourse.block.custom.*;
+
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -61,6 +61,36 @@ public class ModBlocks {
 
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+
+
+//----------------------------------------------------------------------------------------------------------------------
+//                            FLOWER BLOCKS
+//----------------------------------------------------------------------------------------------------------------------
+
+    public static final Block PETUNIA = registerBlock("petunia",
+            new FlowerBlock(StatusEffects.SLOW_FALLING, 4,FabricBlockSettings.copyOf(Blocks.ALLIUM)));
+
+    public static final Block POTTED_PETUNIA = registerBlock("potted_petunia",
+            new FlowerPotBlock(PETUNIA,FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM)));
+
+    public static final Block RED_AZALEA = registerBlock("red_azalea",
+            new RedAzaleaBlock(FabricBlockSettings.copyOf(Blocks.FLOWERING_AZALEA)));
+
+    public static final Block POTTED_RED_AZALEA = registerBlock("potted_azalea",
+            new FlowerPotBlock(RED_AZALEA,FabricBlockSettings.copyOf(Blocks.POTTED_AZALEA_BUSH)));
+
+    public static final Block YELLOW_AZALEA = registerBlock("yellow_azalea",
+            new YellowAzaleaBlock(FabricBlockSettings.copyOf(Blocks.FLOWERING_AZALEA)));
+
+    public static final Block POTTED_YELLOW_AZALEA = registerBlock("potted_yellow_azalea",
+            new FlowerPotBlock(YELLOW_AZALEA,FabricBlockSettings.copyOf(Blocks.POTTED_AZALEA_BUSH)));
+
+    public static final Block PURPLE_AZALEA = registerBlock("purple_azalea",
+            new PurpleAzaleaBlock(FabricBlockSettings.copyOf(Blocks.FLOWERING_AZALEA)));
+
+    public static final Block POTTED_PURPLE_AZALEA = registerBlock("potted_purple_azalea",
+            new FlowerPotBlock(PURPLE_AZALEA,FabricBlockSettings.copyOf(Blocks.POTTED_AZALEA_BUSH)));
 
 
 

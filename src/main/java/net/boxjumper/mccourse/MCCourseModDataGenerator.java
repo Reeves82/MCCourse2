@@ -1,8 +1,13 @@
 package net.boxjumper.mccourse;
 
 import net.boxjumper.mccourse.datagen.*;
+import net.boxjumper.mccourse.world.ModConfiguredFeatures;
+import net.boxjumper.mccourse.world.ModPlacedFeatures;
+import net.boxjumper.mccourse.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class MCCourseModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -14,8 +19,17 @@ public class MCCourseModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockLootTableGenerator::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
+		pack.addProvider(ModFluidTagProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+	}
 
 
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
 
 	}
 }
+

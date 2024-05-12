@@ -4,7 +4,10 @@ import net.boxjumper.mccourse.Item.ModItemGroup;
 import net.boxjumper.mccourse.Item.ModItems;
 import net.boxjumper.mccourse.block.ModBlocks;
 import net.boxjumper.mccourse.entity.ModEntities;
+import net.boxjumper.mccourse.fluid.ModFluids;
+import net.boxjumper.mccourse.sound.ModSounds;
 import net.boxjumper.mccourse.util.ModRegistries;
+import net.boxjumper.mccourse.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -24,6 +27,15 @@ public class MCCourseMod implements ModInitializer {
 		ModRegistries.registerModStuffs();
 
 		ModEntities.registerModEntites();
+
+		ModWorldGeneration.generateModWorldGen();
+
+		ModSounds.registerSounds();
+
+		ModFluids.registerFluids();
+
+
+
 
 	}
 }

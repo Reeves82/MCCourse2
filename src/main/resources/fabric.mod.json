@@ -24,6 +24,9 @@
 
 		"client": [
 			"net.boxjumper.mccourse.MCCourseModClient"
+		],
+		"terrablender": [
+			"net.boxjumper.mccourse.world.biome.ModTerraBlenderAPI"
 		]
 
 	},

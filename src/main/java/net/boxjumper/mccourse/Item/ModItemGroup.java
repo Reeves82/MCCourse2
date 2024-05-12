@@ -2,6 +2,7 @@ package net.boxjumper.mccourse.Item;
 
 import net.boxjumper.mccourse.MCCourseMod;
 import net.boxjumper.mccourse.block.ModBlocks;
+import net.boxjumper.mccourse.fluid.ModFluids;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -117,6 +118,10 @@ public class ModItemGroup {
                         entries.add(ModBlocks.RED_AZALEA_LEAVES);
                         entries.add(ModBlocks.YELLOW_AZALEA_LEAVES);
                         entries.add(ModBlocks.PURPLE_AZALEA_LEAVES);
+                        entries.add(ModBlocks.RED_AZALEA);
+                        entries.add(ModBlocks.YELLOW_AZALEA);
+                        entries.add(ModBlocks.PURPLE_AZALEA);
+                        entries.add(ModBlocks.PETUNIA);
 
                         entries.add(ModBlocks.BLUE_PRISMARINE);
                         entries.add(ModBlocks.BLUE_PRISMARINE_STAIRS);
@@ -130,6 +135,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PURPLE_PRISMARINE);
                         entries.add(ModBlocks.PURPLE_PRISMARINE_STAIRS);
                         entries.add(ModBlocks.PURPLE_PRISMARINE_SLAB);
+
+                        entries.add(ModFluids.SWAMP_WATER_BUCKET);
 
 
 

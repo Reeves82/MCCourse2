@@ -3,6 +3,7 @@ package net.boxjumper.mccourse.datagen;
 import net.boxjumper.mccourse.Item.ModItems;
 import net.boxjumper.mccourse.block.ModBlocks;
 import net.boxjumper.mccourse.block.custom.CauliflowerCropBlock;
+import net.boxjumper.mccourse.fluid.ModFluids;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
@@ -32,6 +33,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_SPORE_BLOSSOM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_SPORE_BLOSSOM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_SPORE_BLOSSOM);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_AZALEA);
+        blockStateModelGenerator.registerPottedAzaleaBush(ModBlocks.POTTED_RED_AZALEA);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_AZALEA);
+        blockStateModelGenerator.registerPottedAzaleaBush(ModBlocks.POTTED_YELLOW_AZALEA);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_AZALEA);
+        blockStateModelGenerator.registerPottedAzaleaBush(ModBlocks.POTTED_PURPLE_AZALEA);
+
 
 
 
@@ -155,6 +166,7 @@ public class ModModelProvider extends FabricModelProvider {
         purplePrismarinTexturePool.slab(ModBlocks.PURPLE_PRISMARINE_SLAB);
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PETUNIA, ModBlocks.POTTED_PETUNIA, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
 
@@ -183,6 +195,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_BOOTS));
+        itemModelGenerator.register(ModFluids.SWAMP_WATER_BUCKET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));

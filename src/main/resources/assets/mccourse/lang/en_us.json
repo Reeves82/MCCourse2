@@ -92,8 +92,18 @@
 
   "item.mccourse.cauliflower_seeds": "Cauliflower Seeds",
   "item.mccourse.cauliflower": "Cauliflower",
+  "item.mccourse.petunia": "Petunia",
+  "item.mccourse.potted_petunia": "Potted Petunia",
+  "item.mccourse.red_azalea": "Red Azalea",
+  "item.mccourse.potted_red_azalea": "Potted Red Azalea",
+  "item.mccourse.yellow_azalea": "Yellow Azalea",
+  "item.mccourse.potted_yellow_azalea": "Potted Yellow Azalea",
+  "item.mccourse.purple_azalea": "Purple Azalea",
+  "item.mccourse.potted_purple_azalea": "Potted Purple Azalea",
 
   "entity.mccourse.porcupine": "Porcupien",
+
+  "item.mccourse.swamp_water_bucket": "Swamp Water Bucket",
 
 
 

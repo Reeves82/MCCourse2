@@ -3,7 +3,9 @@
 	"package": "net.boxjumper.mccourse.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ModEntityDataSavingMixin"
+
 	],
 	"injectors": {
 		"defaultRequire": 1
