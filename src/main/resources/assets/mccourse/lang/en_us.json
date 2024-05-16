@@ -13,6 +13,20 @@
   "block.mccourse.apatite_steel_block": "Apatite Steel Block",
   "block.mccourse.apatite_ore_block": "Apatite Ore Block",
   "block.mccourse.orichalcum_ore_block": "Orichalcum Ore Block",
+  "block.mccourse.aventurine": "Aventurine",
+  "block.mccourse.citrus_amethyst": "Citrus Amethyst",
+  "block.mccourse.budding_aventurine": "Budding Aventurine",
+  "block.mccourse.budding_citrus_amethyst": "Budding Citrus Amethyst",
+  "block.mccourse.green_obsidian": "Green Obsidian",
+
+  "block.mccourse.citrus_amethyst_bud_00": "Citrus Amethyst Bud 1",
+  "block.mccourse.citrus_amethyst_bud_01": "Citrus Amethyst Bud 2",
+  "block.mccourse.citrus_amethyst_bud_02": "Citrus Amethyst Bud 3",
+  "block.mccourse.citrus_amethyst_bud_03": "Citrus Amethyst Bud 4",
+  "block.mccourse.aventurine_crystal_00": "Aventurine Crystal 1",
+  "block.mccourse.aventurine_crystal_01": "Aventurine Crystal 2",
+  "block.mccourse.aventurine_crystal_02": "Aventurine Crystal 3",
+  "block.mccourse.aventurine_crystal_03": "Aventurine Crystal 4",
 
   "block.mccourse.blue_spore_blossom": "Blue Spore Blossom",
   "block.mccourse.orange_spore_blossom": "Orange Spore Blossom",
@@ -33,6 +47,12 @@
   "block.mccourse.slim_mud": "Slim Mud",
   "block.mccourse.smelly_mud": "Smelly Mud",
   "block.mccourse.muddy_clay": "Muddy Clay",
+  "block.mccourse.soft_rock_stairs": "Soft Rock Stairs",
+  "block.mccourse.soft_rock_slab": "Soft Rock Slab",
+  "block.mccourse.rock_stairs": "Rock Stairs",
+  "block.mccourse.rock_slab": "Rock Slab",
+
+
 
   "block.mccourse.terracotta_slab": "Terracotta Slab",
   "block.mccourse.white_terracotta_slab": "White Terracotta Slab",
@@ -92,13 +112,13 @@
 
   "item.mccourse.cauliflower_seeds": "Cauliflower Seeds",
   "item.mccourse.cauliflower": "Cauliflower",
-  "item.mccourse.petunia": "Petunia",
+  "block.mccourse.petunia": "Petunia",
   "item.mccourse.potted_petunia": "Potted Petunia",
-  "item.mccourse.red_azalea": "Red Azalea",
+  "block.mccourse.red_azalea": "Red Azalea",
   "item.mccourse.potted_red_azalea": "Potted Red Azalea",
-  "item.mccourse.yellow_azalea": "Yellow Azalea",
+  "block.mccourse.yellow_azalea": "Yellow Azalea",
   "item.mccourse.potted_yellow_azalea": "Potted Yellow Azalea",
-  "item.mccourse.purple_azalea": "Purple Azalea",
+  "block.mccourse.purple_azalea": "Purple Azalea",
   "item.mccourse.potted_purple_azalea": "Potted Purple Azalea",
 
   "entity.mccourse.porcupine": "Porcupien",

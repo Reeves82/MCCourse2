@@ -62,6 +62,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.ROCK_STAIRS,
                         ModBlocks.SOFT_ROCK_SLAB,
                         ModBlocks.ROCK_SLAB,
+                        ModBlocks.GREEN_OBSIDIAN,
+                        ModBlocks.CITRUS_AMETHYST,
+                        ModBlocks.CITRUS_AMETHYST_BUD_00,
+                        ModBlocks.CITRUS_AMETHYST_BUD_01,
+                        ModBlocks.CITRUS_AMETHYST_BUD_02,
+                        ModBlocks.CITRUS_AMETHYST_BUD_03,
+                        ModBlocks.AVENTURINE_CRYSTAL_00,
+                        ModBlocks.AVENTURINE_CRYSTAL_01,
+                        ModBlocks.AVENTURINE_CRYSTAL_02,
+                        ModBlocks.AVENTURINE_CRYSTAL_03,
+                        ModBlocks.AVENTURINE,
                         ModBlocks.ROCK);
 
 //----------------------------------------------------------------------------------------------------------------------

@@ -1,5 +1,6 @@
 package net.boxjumper.mccourse.block.custom;
 
+import net.boxjumper.mccourse.world.tree.RedAzaleaSaplingGenerator;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -7,7 +8,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.Fertilizable;
 import net.minecraft.block.PlantBlock;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.block.sapling.AzaleaSaplingGenerator;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
 public class RedAzaleaBlock extends PlantBlock implements Fertilizable {
-    private static final AzaleaSaplingGenerator GENERATOR = new AzaleaSaplingGenerator();
+    private static final RedAzaleaSaplingGenerator GENERATOR = new RedAzaleaSaplingGenerator();
     private static final VoxelShape SHAPE = VoxelShapes.union(Block.createCuboidShape(0.0, 8.0, 0.0, 16.0, 16.0, 16.0), Block.createCuboidShape(6.0, 0.0, 6.0, 10.0, 8.0, 10.0));
 
     public RedAzaleaBlock(AbstractBlock.Settings settings) {
@@ -35,8 +35,9 @@ public class RedAzaleaBlock extends PlantBlock implements Fertilizable {
         return floor.isOf(Blocks.CLAY) || super.canPlantOnTop(floor, world, pos);
     }
 
-    @Override
-    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
+
+
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
         return world.getFluidState(pos.up()).isEmpty();
     }
 

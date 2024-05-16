@@ -1,6 +1,6 @@
 package net.boxjumper.mccourse.block.custom;
 
-import net.boxjumper.mccourse.world.gen.tree.PurpleAzaleaSaplingGenerator;
+import net.boxjumper.mccourse.world.tree.PurpleAzaleaSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
@@ -29,8 +29,9 @@ public class PurpleAzaleaBlock extends PlantBlock implements Fertilizable {
         return floor.isOf(Blocks.CLAY) || super.canPlantOnTop(floor, world, pos);
     }
 
-    @Override
-    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
+
+
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
         return world.getFluidState(pos.up()).isEmpty();
     }
 

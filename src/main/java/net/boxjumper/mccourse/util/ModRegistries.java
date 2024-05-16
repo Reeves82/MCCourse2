@@ -1,6 +1,8 @@
 package net.boxjumper.mccourse.util;
 
 import net.boxjumper.mccourse.Item.ModItems;
+import net.boxjumper.mccourse.MCCourseMod;
+import net.boxjumper.mccourse.block.ModBlocks;
 import net.boxjumper.mccourse.command.ReturnHomeCommand;
 import net.boxjumper.mccourse.command.SetHomeCommand;
 import net.boxjumper.mccourse.entity.ModEntities;
@@ -12,7 +14,9 @@ import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.ComposterBlock;
+import net.minecraft.util.Identifier;
 
 public class ModRegistries {
     public static void registerModStuffs() {
@@ -21,6 +25,16 @@ public class ModRegistries {
         registerAttributes();
         registerCommands();
         registerEvents();
+        createPortal();
+    }
+
+    private static void createPortal() {
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.GREEN_OBSIDIAN)
+                .lightWithItem(ModItems.CAULIFLOWER)
+                .destDimID(new Identifier(MCCourseMod.MOD_ID, "gardens_of_arcadia"))
+                .tintColor(0x000000)
+                .registerPortal();
     }
 
     private static void registerFuels(){

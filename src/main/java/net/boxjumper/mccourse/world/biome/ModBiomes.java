@@ -3,7 +3,6 @@ package net.boxjumper.mccourse.world.biome;
 import net.boxjumper.mccourse.MCCourseMod;
 import net.boxjumper.mccourse.entity.ModEntities;
 import net.minecraft.client.sound.MusicType;
-import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registerable;
@@ -22,16 +21,16 @@ import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 public class ModBiomes {
-    public static final RegistryKey<Biome> TEST_BIOME = register("test_biome");
-    public static final RegistryKey<Biome> TEST_BIOME_2 = register("test_biome_2");
+    public static final RegistryKey<Biome> GARDENS_CAVES = register("gardens_caves");
+    public static final RegistryKey<Biome> A_TEST_BIOME_2 = register("a_test_biome_2");
 
     public static RegistryKey<Biome> register(String name) {
         return RegistryKey.of(RegistryKeys.BIOME, new Identifier(MCCourseMod.MOD_ID, name));
     }
 
     public static void bootstrap(Registerable<Biome> context) {
-        context.register(TEST_BIOME, testBiome(context));
-        context.register(TEST_BIOME_2, testBiome2(context));
+        context.register(GARDENS_CAVES, gardens_caves(context));
+        context.register(A_TEST_BIOME_2, a_testBiome2(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
@@ -43,7 +42,7 @@ public class ModBiomes {
         DefaultBiomeFeatures.addFrozenTopLayer(builder);
     }
 
-    public static Biome testBiome(Registerable<Biome> context) {
+    public static Biome gardens_caves(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.PORCUPINE, 2, 3, 5));
 
@@ -70,8 +69,8 @@ public class ModBiomes {
 
         return new Biome.Builder()
                 .precipitation(true)
-                .downfall(0.4f)
-                .temperature(0.7f)
+                .downfall(0.7f)
+                .temperature(0.5f)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
@@ -86,7 +85,7 @@ public class ModBiomes {
                 .build();
     }
 
-    public static Biome testBiome2(Registerable<Biome> context) {
+    public static Biome a_testBiome2(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.PORCUPINE, 2, 3, 5));
 

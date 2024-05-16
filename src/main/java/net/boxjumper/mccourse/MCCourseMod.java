@@ -4,7 +4,6 @@ import net.boxjumper.mccourse.Item.ModItemGroup;
 import net.boxjumper.mccourse.Item.ModItems;
 import net.boxjumper.mccourse.block.ModBlocks;
 import net.boxjumper.mccourse.entity.ModEntities;
-import net.boxjumper.mccourse.fluid.ModFluids;
 import net.boxjumper.mccourse.sound.ModSounds;
 import net.boxjumper.mccourse.util.ModRegistries;
 import net.boxjumper.mccourse.world.gen.ModWorldGeneration;
@@ -32,7 +31,6 @@ public class MCCourseMod implements ModInitializer {
 
 		ModSounds.registerSounds();
 
-		ModFluids.registerFluids();
 
 
 

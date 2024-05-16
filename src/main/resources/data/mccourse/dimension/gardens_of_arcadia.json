@@ -1,0 +1,13 @@
+{
+    "type": "mccourse:gardens_of_arcadia_type",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:caves",
+        "biome_source": {
+            "type": "minecraft:checkerboard",
+            "biomes": [
+                "mccourse:gardens_caves"
+            ]
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "mccourse:block/citrus_amethyst_bud_03",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "mccourse:block/citrus_amethyst_bud_03",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "mccourse:block/citrus_amethyst_bud_03",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "mccourse:block/citrus_amethyst_bud_03",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "mccourse:block/citrus_amethyst_bud_03"
+    },
+    "facing=west": {
+      "model": "mccourse:block/citrus_amethyst_bud_03",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

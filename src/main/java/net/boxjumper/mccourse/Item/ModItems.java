@@ -1,6 +1,5 @@
 package net.boxjumper.mccourse.Item;
 
-import com.sun.jna.platform.win32.Winnetwk;
 import net.boxjumper.mccourse.Item.custom.MetalDetectorItem;
 import net.boxjumper.mccourse.Item.custom.ModArmorItem;
 import net.boxjumper.mccourse.Item.custom.ModPoisonSwordItem;

@@ -3,7 +3,6 @@ package net.boxjumper.mccourse.datagen;
 import net.boxjumper.mccourse.Item.ModItems;
 import net.boxjumper.mccourse.block.ModBlocks;
 import net.boxjumper.mccourse.block.custom.CauliflowerCropBlock;
-import net.boxjumper.mccourse.fluid.ModFluids;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
@@ -28,6 +27,20 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORICHALCUM_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORICHALCUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREEN_OBSIDIAN);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CITRUS_AMETHYST);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AVENTURINE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_CITRUS_AMETHYST);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_AVENTURINE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CITRUS_AMETHYST_BUD_00);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CITRUS_AMETHYST_BUD_01);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CITRUS_AMETHYST_BUD_02);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CITRUS_AMETHYST_BUD_03);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AVENTURINE_CRYSTAL_00);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AVENTURINE_CRYSTAL_01);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AVENTURINE_CRYSTAL_02);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AVENTURINE_CRYSTAL_03);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_SPORE_BLOSSOM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_SPORE_BLOSSOM);
@@ -195,7 +208,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ORICHALCUM_BOOTS));
-        itemModelGenerator.register(ModFluids.SWAMP_WATER_BUCKET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));

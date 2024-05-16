@@ -1,6 +1,5 @@
 package net.boxjumper.mccourse.datagen;
 
-import net.boxjumper.mccourse.fluid.ModFluids;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -15,9 +14,9 @@ public class ModFluidTagProvider extends FabricTagProvider.FluidTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        this.getOrCreateTagBuilder(FluidTags.WATER)
-                .add(ModFluids.FLOWING_SWAMP_WATER)
-                .add(ModFluids.STILL_SWAMP_WATER);
+        //this.getOrCreateTagBuilder(FluidTags.WATER)
+               // .add(ModFluids.FLOWING_SWAMP_WATER)
+               // .add(ModFluids.STILL_SWAMP_WATER);
 
         this.getOrCreateTagBuilder(FluidTags.LAVA);
                 //.add(ModFluids.FLOWING_SWAMP_WATER)

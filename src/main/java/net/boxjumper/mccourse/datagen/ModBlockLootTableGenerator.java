@@ -15,6 +15,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.GREEN_OBSIDIAN);
         addDrop(ModBlocks.ORICHALCUM_BLOCK);
         addDrop(ModBlocks.APATITE_STEEL_BLOCK);
         addDrop(ModBlocks.BLUE_SPORE_BLOSSOM);
@@ -31,6 +32,17 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POTTED_YELLOW_AZALEA);
         addDrop(ModBlocks.PURPLE_AZALEA);
         addDrop(ModBlocks.POTTED_PURPLE_AZALEA);
+
+        addDrop(ModBlocks.CITRUS_AMETHYST);
+        addDrop(ModBlocks.AVENTURINE);
+        addDrop(ModBlocks.CITRUS_AMETHYST_BUD_00);
+        addDrop(ModBlocks.CITRUS_AMETHYST_BUD_01);
+        addDrop(ModBlocks.CITRUS_AMETHYST_BUD_02);
+        addDrop(ModBlocks.CITRUS_AMETHYST_BUD_03);
+        addDrop(ModBlocks.AVENTURINE_CRYSTAL_00);
+        addDrop(ModBlocks.AVENTURINE_CRYSTAL_01);
+        addDrop(ModBlocks.AVENTURINE_CRYSTAL_02);
+        addDrop(ModBlocks.AVENTURINE_CRYSTAL_03);
 
         addDrop(ModBlocks.TERRACOTTA_SLAB, slabDrops(ModBlocks.TERRACOTTA_SLAB));
         addDrop(ModBlocks.WHITE_TERRACOTTA_SLAB, slabDrops(ModBlocks.WHITE_TERRACOTTA_SLAB));

@@ -2,7 +2,6 @@ package net.boxjumper.mccourse.Item;
 
 import net.boxjumper.mccourse.MCCourseMod;
 import net.boxjumper.mccourse.block.ModBlocks;
-import net.boxjumper.mccourse.fluid.ModFluids;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -62,6 +61,22 @@ public class ModItemGroup {
                         entries.add(ModBlocks.SLIM_MUD);
                         entries.add(ModBlocks.SMELLY_MUD);
                         entries.add(ModBlocks.MUDDY_CLAY);
+
+                        entries.add(ModBlocks.GREEN_OBSIDIAN);
+
+                        entries.add(ModBlocks.AVENTURINE);
+                        entries.add(ModBlocks.CITRUS_AMETHYST);
+                        entries.add(ModBlocks.BUDDING_CITRUS_AMETHYST);
+                        entries.add(ModBlocks.BUDDING_AVENTURINE);
+
+                        entries.add(ModBlocks.CITRUS_AMETHYST_BUD_00);
+                        entries.add(ModBlocks.CITRUS_AMETHYST_BUD_01);
+                        entries.add(ModBlocks.CITRUS_AMETHYST_BUD_02);
+                        entries.add(ModBlocks.CITRUS_AMETHYST_BUD_03);
+                        entries.add(ModBlocks.AVENTURINE_CRYSTAL_00);
+                        entries.add(ModBlocks.AVENTURINE_CRYSTAL_01);
+                        entries.add(ModBlocks.AVENTURINE_CRYSTAL_02);
+                        entries.add(ModBlocks.AVENTURINE_CRYSTAL_03);
 
                         entries.add(ModBlocks.CYAN_LOUNGE_CHAIR);
                         entries.add(ModBlocks.RED_LOUNGE_CHAIR);
@@ -136,7 +151,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PURPLE_PRISMARINE_STAIRS);
                         entries.add(ModBlocks.PURPLE_PRISMARINE_SLAB);
 
-                        entries.add(ModFluids.SWAMP_WATER_BUCKET);
 
 
 

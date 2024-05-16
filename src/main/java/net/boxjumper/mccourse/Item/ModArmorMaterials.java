@@ -4,7 +4,6 @@ import net.boxjumper.mccourse.MCCourseMod;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ArmorMaterials;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -24,7 +23,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         map.put(ArmorItem.Type.HELMET, 9);
     }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0f, 0.1f, () -> Ingredient.ofItems(ModItems.ORICHALCUM_INGOT));
 
-    public static final StringIdentifiable.Codec<ArmorMaterials> CODEC;
+   public static final StringIdentifiable.EnumCodec<ArmorMaterials> CODEC;
     private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY;
     private final String name;
     private final int durabilityMultiplier;
